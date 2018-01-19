@@ -53,4 +53,6 @@ As human beings, we all seem to want to dictate our environment to our desirable
 
 An effort has been made to make some styling of code homogenous between developers. Python does this strongly with white-space indentation. Go slightly does it by at least enforcing [certain bracing style with automatic insertion of semi-colons](https://golang.org/doc/faq#semicolons) which caused its own [holy war](https://groups.google.com/forum/#!topic/golang-nuts/rzLzp_Z74ik%5B1-25%5D) *because* the original poster had a style that works for him!
 
-So let’s talk about balance. Is it removing the artistic license from the artist? I think it is. In the end when everyone is done homogenizing to a single style, we will have no more art, just instructions. Instead of having all kinds of beautiful paintings representing what the original artists were attempting to convey, we’ll have cookie cutter  paintings of code that execute perfectly and can be read and maintained by everyone. Resistance is futile.
+So let’s talk about balance. Is it removing the artistic license from the artist? I think it is. In the end when everyone is done homogenizing to a single style, we will have no more art, just instructions. Instead of having all kinds of beautiful paintings representing what the original artists were attempting to convey, we’ll have cookie cutter  paintings of code that execute perfectly and can be read and maintained by everyone. Resistance is futile; [all your base are belong to us](https://www.youtube.com/watch?v=xZPTYpTKOI0)!
+
+index
