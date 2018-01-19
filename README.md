@@ -37,7 +37,9 @@ There are some difficult-to-grasp philisophical concepts that I'm bringing to li
 Consider the painting "The Mona Lisa." If Leonardo de Vinci submitted his famous painting to get PRed before being able to submit the painting to arthub.com, wouldn't it have been interested to read those reviews?
 
   "Her lips are too thin! What were you thinking?!?!"
+  
   "I can't tell if that is a veil on her forehead or some crazy shadowing trick you're attempting to make. Could you darken it"
+  
   "Ugh, that background sucks! I prefer a background that is more beachy."
   
 That is essentially what some reviews for code are; opinions. They are opinions of people who have their own stylistic approach projecting those subjective styles onto the code they are reviewing. Now, don't get me wrong. Their are reviews that are very apropos to the project that have nothing to do with the style or art of the project, but rather the practical approach being made in the project. As an analogy, that would be something like the review of de Vinci's painting saying something like, "you would be better served to use material X instead of this material Y, which will make your colors POP!”
