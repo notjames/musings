@@ -1,6 +1,5 @@
 https://notjames.github.io/blog/
 
-
 # Coding is an Art
 By Jim Conner
 
@@ -40,7 +39,7 @@ Consider the painting "The Mona Lisa." If Leonardo de Vinci submitted his famous
 
   "Her lips are too thin! What were you thinking?!?!"
   
-  "I can't tell if that is a veil on her forehead or some crazy shadowing trick you're attempting to make. Could you darken it"
+  "I can't tell if that is a veil on her forehead or some crazy shadowing trick you're attempting to make. Could you darken it?"
   
   "Ugh, that background sucks! I prefer a background that is more beachy."
   
