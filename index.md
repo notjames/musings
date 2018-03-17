@@ -5,7 +5,7 @@ Disclaimer: this will likely cause a holy war...#justsayin
 
 ## Huh? A new rule: the Linux tool you just wrote MUST work in Mac OS also! Wait! What?! Why?!
 
-So, your production environment is a Linux environment, right? Sure you might use Kubernetes or just Docker on Linux in your production environment and likely in your staging and development environments (the official ones) as well. Your employer has been kind enough to assign you a Mac laptop on which to develop. This is all the rage it seems lately. I mean, the hardware is amazing. There is no real dispute there. But you get to your new desk and start onboarding only to learn that every script you write must work in Mac and Linux. Hmm. Wait. What?
+So, your production environment is a Linux environment, right? Sure you might use Kubernetes or just Docker on Linux in your production environment and likely in your staging and development environments (the official ones) as well. Your employer has been kind enough to assign you a Mac laptop on which to develop. This is all the rage it seems lately. I mean, the hardware is amazing. There is no real dispute there. But you get to your new desk and start onboarding only to learn that every shell script you write must work in Mac and Linux. Hmm. Wait. What?
 
 ## It doesn't make sense...
 
@@ -13,7 +13,7 @@ So what's the problem? Why on earth are we required to make everything we develo
 
 ## But seriously...
 
-Yes, yes. I am a little bias. I don't particularly like the BSD terminal working environment. Don't get me wrong. I have mad respect for the BSDs. I find the basic tooling to be far more rigid in terms of features in the basic tools like `awk`, `grep`, `sed`, et al. There in lies the problem. These are basic tools!! If you write a shell script in Linux, it's not guaranteed to work properly in Mac. In fact, it likely won't. So now, you, the developer, are required to do all the work to make a portable shell script between Mac and Linux and for what? Because someone blindly dictated to you that your developer laptop is Mac and you must just make it work in both environments?! Does this even make sense?! I conject, no; resoundingly!
+Yes, yes. I am a little bias. I don't particularly like the BSD terminal working environment. Don't get me wrong. I have mad respect for the BSDs. I find the basic tooling to be far more rigid in terms of features in the basic tools like `awk`, `grep`, `sed`, et al. Therein lies the problem. These are basic tools!! If you write a shell script in Linux, it's not guaranteed to work properly in Mac. In fact, it likely won't. So now, you, the developer, are required to do all the work to make a portable shell script between Mac and Linux and for what? Because someone blindly dictated to you that your developer laptop is Mac and you must just make it work in both environments?! Does this even make sense?! I conject, no; resoundingly!
 
 ## Why the rant? I don't know what the problem is...
 
@@ -21,7 +21,7 @@ Unfortunately, I can't find the github project right now. I'll update this blog 
 
 ## What do you recommend?
 
-Easy! Create yourself a Linux VM or if that's too heavy for you, use a Linux container! Forget all that lame Mac bunk! That's what computers are for. Then you can go tell those baffoons forcing you to write unnecessarily portable code to jump in a river because you have a way to write Linux scripts in Mac.
+Easy! Create yourself a Linux VM or if that's too heavy for you, use a Linux container! Forget all that lame Mac bunk! That's what computers are for. Then you can go tell those baffoons forcing you to write unnecessarily portable code to jump in a river because you have a way to write Linux shell scripts in Mac.
 
 ## But how?!?
 
