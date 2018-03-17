@@ -56,15 +56,19 @@ Setting up a virtualmachine is vastly more involved than just using a container.
 
 ## How do I set up a container?
 
-You'll find yourself a cozy place in your terminal, you'll need the provided [`Dockerfile`](/devcontainer/Dockerfile). Grab the files in the `devcontainer` directory of this repo.
+You'll find yourself a cozy place in your terminal, you'll need the provided [`Dockerfile`](/devcontainer/Dockerfile). You'll need the other files in [here](/devcontainer), too. Grab the files in the `devcontainer` directory of this repo.
 
 Now, run the following command (be sure you've properly installed Docker):
 
-`docker build -t devcontainer:v1.0 .`
+```
+docker build -t devcontainer:v1.0 .
+```
 
 Once it's done, you can start the container with:
 
-`docker run -it -v $HOME:/home/$USER/host -e ORIGHOME=$HOME -e UID=$(stat -f %u .) -e GID=$(stat -f %g .) -e NUSER=$USER devcontainer:v1.0 bash`
+```
+docker run -it -v $HOME:/home/$USER/host -e ORIGHOME=$HOME -e UID=$(stat -f %u .) -e GID=$(stat -f %g .) -e NUSER=$USER devcontainer:v1.0 bash
+```
 
 You'll find yourself in a bash shell of an Ubuntu container. You can edit with the vim editor. Basic developer tools are installed. If you want to tweak your container, you'll edit the Dockerfile and re-run the `docker build` command above.
 
