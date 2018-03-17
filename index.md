@@ -13,11 +13,11 @@ So what's the problem? Why on earth are we required to make everything we develo
 
 ## But seriously...
 
-Yes, yes. I am a little bias. I don't particularly like the BSD terminal working environment. Don't get me wrong. I have mad respect for the BSDs. I find the basic tooling to be far more rigid in terms of features in the basic tools like `awk`, `grep`, `sed`, et al. Therein lies the problem. These are basic tools!! If you write a shell script in Linux, it's not guaranteed to work properly in Mac. In fact, it likely won't. So now, you, the developer, are required to do all the work to make a portable shell script between Mac and Linux and for what? Because someone blindly dictated to you that your developer laptop is Mac and you must just make it work in both environments?! Does this even make sense?! I conject, no; resoundingly!
+Yes, yes. I am a little bias. I don't particularly like the BSD terminal working environment. Don't get me wrong. I have mad respect for the BSDs. I find the basic tooling to be far more rigid in terms of features in the basic tools like `awk`, `grep`, `sed`, et al. Therein lies the problem. These are basic tools!! If you write a shell script in Linux, it's not guaranteed to work properly in Mac. In fact, it likely won't especially if you want to use some of the more feature-rich qualities of the GNU tools in Linux. So now, you, the developer, are required to do all the work to make a portable shell script between Mac and Linux and for what? Because someone blindly dictated to you that your developer laptop is Mac and you must just make it work in both environments?! Does this even make sense?! I conject, no; resoundingly!
 
-## Why the rant? I don't know what the problem is...
+## Why the rant? I don't know what your problem is...
 
-Unfortunately, I can't find the github project right now. I'll update this blog if and when I find it again. As I recall, however, it was a Kubernetes project that required contributors to write scripts that *must* run in Mac. I also personally know of other dev teams that have the same rule! Geez. I rolled my eyes. That. is. ridiculous! Especially when all those developers are doing is writing code to work in containers!! Then I started wondering about all of the open-source devs who are in the world who don't even have Macs or the ability to purchase them! For those who don't know, Macs are notoriously expensive! How on earth do those guys make their code work in Mac? To the best of my knowledge, there is no way to make a Mac container work; at least not easily and frankly, the work required to make it work would likely be a huge time sink.
+Unfortunately, I can't find the github project right now. I'll update this blog if and when I find it again. As I recall, however, it was a Kubernetes project that required contributors to write scripts that *must* run in Mac. I also personally know of other dev teams that have the same rule! Geez. I rolled my eyes. That. is. ridiculous! Especially when all those developers are doing is writing code to work in containers!! Then I started wondering about all of the open-source contributors who are in the world who don't even have Macs or the ability to purchase them! If you don't already know, Macs are notoriously expensive! How on earth do those guys test and make their code work in Mac? To the best of my knowledge, there is no way to make a Mac container work; at least not easily and frankly, the work required to make it work would likely be a huge time sink.
 
 ## What do you recommend?
 
@@ -25,7 +25,7 @@ Easy! Create yourself a Linux VM or if that's too heavy for you, use a Linux con
 
 ## But how?!?
 
-OK. Let's go down this road. You have a Mac, right? You need to make a decision: use a container (I recommend Docker because it's what I know best) or Virtual Machine (I recommend Virtualbox because it's free and works quite well)?
+OK. Let's go down this road. You have a Mac, right? You need to make a decision: use a container (I recommend Docker but rkt is good, too) or Virtual Machine (I recommend Virtualbox because it's free and works quite well)?
 
 ### Docker
 
@@ -38,7 +38,7 @@ Installing `VirtualBox` on Mac is pretty simple. Follow the instructions [here](
 
 ### Which one should I use?
 
-Well, that's a loaded question. Setting up a container is probably the easiest and fastest way to go, but if you need a full OS, then VM is the right way. If you use a VM, you'll need to have a considerable amount of hardware availability on your Mac to make it all run smoothly. I personally recommend at least a multi-core CPU with 16Gb or RAM and a large enough hard drive to allow a decent sized virtual disk for Linux. I generally prefer a drive that is no less than 128 Gb (dynamically allocated -- more about that later).
+Well, that's a loaded question. Setting up a container is probably the easiest and fastest way to go, but if you need a full OS, then VM is the right way. If you use a VM, you'll need to have a considerable amount of hardware availability on your Mac to make it all run smoothly. I personally recommend at least a multi-core CPU with 16Gb or RAM and a large enough hard drive to allow a decent sized virtual disk for Linux. I generally prefer a virtual drive that is no less than 128 Gb (dynamically allocated -- more about that later) so you'll need a large enough SSD on your Mac, though it's likely you have at least a 500Mb SSD or maybe even a Terabyte. Carving 128Gb out of either of those shouldn't be too difficult.
 
 ### What's the benefits of a container over a VM?
 
