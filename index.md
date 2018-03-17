@@ -48,15 +48,15 @@ A virtual machine is in fact exactly that. It's a software-based computer. Essen
 
 ### Which one takes more resource?
 
-Well, if you're talking about running resources, the VM will take whatever amount of hardware resources you're allocated to the VM. The container is seen by the host OS as just another program and in fact whatever runs inside the container is actually being run by the host's hardware resources (well, the VM is too, but in a virtual environment). The short answer is that the VM will take more resources to run than the container.
+Well, if you're talking about running resources, the VM will take whatever amount of hardware resources you've allocated to the VM. The container is seen by the host OS as just another program and in fact whatever runs inside the container is actually being run by the host's hardware resources (well, the VM is too, but in a virtual environment). The short answer is that the VM will take more resources to run than the container.
 
 ## How do I set up a VM?
 
-Setting up a virtualmachine is vastly more involved than just using a container. So to make it a little easier for you, you can follow this [walk-through](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-create-vm.html) and just substitute the Operating System used as Linux instead of Windows. The general steps are all the same. The ISO you can use for the installation is up to you, but I'm frankly a fan of [Ubuntu Budgie](http://cdimage.ubuntu.com/ubuntu-budgie/releases/17.10.1/release/ubuntu-budgie-17.10.1-desktop-amd64.iso). Save that ISO in your Downloads directory and when you get to the part where you need to choose an ISO image, point to that ISO. If you've never installed Linux before, well, this is your lucky chance. Unfortunately, installing linux is outside the scope of this document.
+Setting up a virtualmachine is vastly more involved than just using a container. So to make it a little easier for you, you can follow this [walk-through](https://docs.oracle.com/cd/E26217_01/E26796/html/qs-create-vm.html) and just substitute the Operating System used as Linux instead of Windows. The general steps are all the same. The ISO you can use for the installation is up to you, but I'm frankly a fan of [Ubuntu Budgie](http://cdimage.ubuntu.com/ubuntu-budgie/releases/17.10.1/release/ubuntu-budgie-17.10.1-desktop-amd64.iso). Save whichever ISO you choose in your Downloads directory and when you get to the part where you need to choose an ISO image, point to that ISO. If you've never installed Linux before, well, this is your lucky chance. Unfortunately, installing linux is outside the scope of this document.
 
 ## How do I set up a container?
 
-You'll find yourself a cozy place in your terminal, you'll need the provided `Dockerfile`. Grab the files in the `devcontainer` directory of this repo.
+You'll find yourself a cozy place in your terminal, you'll need the provided [`Dockerfile`](/devcontainer/Dockerfile). Grab the files in the `devcontainer` directory of this repo.
 
 Now, run the following command (be sure you've properly installed Docker):
 
