@@ -56,7 +56,7 @@ Setting up a virtualmachine is vastly more involved than just using a container.
 
 ## How do I set up a container?
 
-You'll find yourself a cozy place in your terminal, you'll need the provided [`Dockerfile`](/devcontainer/Dockerfile). You'll need the other files in [here](/devcontainer), too. Grab the files in the `devcontainer` directory of this repo.
+You'll find yourself a cozy place in your terminal, you'll need the provided [`Dockerfile`](/musings/devcontainer/Dockerfile). You'll need the other files in [here](/musings/devcontainer), too. Grab the files in the `devcontainer` directory of this repo.
 
 Now, run the following command (be sure you've properly installed Docker):
 
