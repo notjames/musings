@@ -1,5 +1,5 @@
 # Why Are Linux Developers Required to Make it Work on Mac?
-By Jim Conner
+By Jim Conner 03/2018
 
 Disclaimer: this will likely cause a holy war...#justsayin
 
@@ -70,9 +70,9 @@ Once it's done, you can start the container with:
 docker run -it -v $HOME:/home/$USER/host -e ORIGHOME=$HOME -e UID=$(stat -f %u .) -e GID=$(stat -f %g .) -e NUSER=$USER devcontainer:v1.0 bash
 ```
 
-You'll find yourself in a bash shell of an Ubuntu container. You can edit with the vim editor. Basic developer tools are installed. If you want to tweak your container, you'll edit the Dockerfile and re-run the `docker build` command above.
+You'll find yourself in a bash shell of an Ubuntu container. You can edit with the vim editor. Basic developer tools are installed. If you want to tweak your container, you'll edit the Dockerfile and re-run the `docker build` command above. Within the container, you'll be automatically `su`ed into an interactive shell of your username. There will be a directory called `host`. That directory *is* your Mac `$HOME` directory. Anything you do in that directory will affect your host OS, so be careful.
 
-Finally, there's a very important thing to know about containers. Anything created, changed, or added to the container during your time in it *will disappear when you leave the container*!! OK, so that sucks. But there's a way to fix that.
+Finally, there's a very important thing to know about containers. Anything created, changed, or added to the container **not in the `host` directory** during your time within it *will disappear when you leave the container*!! OK, so that potentially sucks. In other words, the container is ephemeral, but there's a way to fix that.
 
 While you're in the running container, if you ever need to save what you've done, you can drop out of the container with `ctrl+p ctrl+q`. Once you're in your host shell, you can commit changes to the container using the following:
 
@@ -86,13 +86,12 @@ docker commit $dn
 # re-attach to the running container
 docker attach $dn
 ```
-
-Easy peezy lemon squeezy.
+Easy peezy lemon squeezy. So, in short, you either do everything in `/home/<username>/host` and all is well, or you can run the three commands mentioned above. If you don't follow both of these things, you will lose everything you did in the container while running it when you exit that container!
 
 ----
 
 # Coding is an Art
-By Jim Conner
+By Jim Conner 01/2018
 
 ## Coding is an Art; not for long?
 
@@ -146,4 +145,5 @@ An effort has been made to make some styling of code homogenous between develope
 
 So let’s talk about balance. Is it removing the artistic license from the artist? I think it is. In the end when everyone is done homogenizing to a single style, we will have no more art, just instructions. Instead of having all kinds of beautiful paintings representing what the original artists were attempting to convey, we’ll have cookie cutter  paintings of code that execute perfectly and can be read and maintained by everyone. Resistance is futile; [all your base are belong to us](https://www.youtube.com/watch?v=xZPTYpTKOI0)!
 
-[This blog](https://notjames.github.io/blog/)
+
+[This blog](https://notjames.github.io/musings/)
