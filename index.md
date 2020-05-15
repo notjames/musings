@@ -1,109 +1,14 @@
 # Covid-19: Personal Observations
 By Jim Conner 05/2020
 
-## Purpose
-I wanted to scrutinize the numbers myself because something wasn't adding up
-with respect to the flu deaths in the 2019-2020 season compared to Covid deaths.
+## TL;DR
 
-I was able to obtain a CDC API key (links are in the `flu-status` script and in
-the references section at the end of this document.
+We're living in unprecedented times right now. Below, one can see my own
+investigation into the numbers between Covid deaths and Influenza deaths. These
+numbers, in my estimation, are really important! I explain below. But for now if
+you're just interested in seeing the numbers:
 
-These are free, publically available APIs, which I assume are maintained
-by the CDC given the domain is owned by cdc.gov.
-
-Here's the code: https://github.com/notjames/jimconn-shell/blob/master/projects/covid/sources/bin/flu-stats
-
-## Inferences
-I haven't made any yet. I've been trying to simply grab the numbers and keep
-them as accurate as possible from the source. My initial thoughts are that I'm
-not convinced that the CDC is doing a good job of keeping the numbers consistent
-between the different endpoints. I am open to a couple of possibilities here.
-
-  1. The publically available APIs are not the same as the ones used internally
-  at the CDC
-  1. The APIs are the same and there are multiple people maintaining different
-  projects
-  1. I don't understand the difference between the like-named endpoints and thus
-  my understanding of what the mis-matched numbers represent is simply unknown
-  1. something else I just haven't thought of yet
-
-These kinds of inconsistencies make it super easy to believe we Americans are
-being lied to. I'm going to keep an objective perspective on this project until
-I can get more obvious and truthful details. This project is in its infantile
-status and so I can't make any reliable assumptions yet.
-
-## Obvious conclusions
-The only conclusion I can make so far is that the numbers between the sources
-don't add up...at all. By "add up," I don't mean mathematically. I mean
-logically. **The numbers between the API sources don't seem to match up**. These
-numbers don't match up to what we're told by the media. Things just aren't adding
-up. So, I need to research that more.
-
-These mismatches cause me to be very leary.
-
-### Notes
-  * These numbers represent the United States only!
-  * A Flu season is considered to run from about November to between April and
-    June depending on the numbers of people sick I believe.
-
-## Author
-Jim Conner
-
-## Bugs
-Likely. This project is still in heavy development when I have time to work on
-it.
-
-## About the project
-I am not a statistician. I am a software developer. One of the reasons I want
-this to be publically available is so that my work is reviewed and approved. If
-there are mistakes, please let me know so I can fix them. I'm seeking review for
-code and method.
-
-## Getting this script
-The fastest way to get this script is to install and use `wget` and then run:
-
-```
-$ cd $HOME/Downloads
-$ wget https://github.com/notjames/jimconn-shell/blob/master/projects/covid/sources/bin/flu-stats
-$ wget https://github.com/notjames/jimconn-shell/blob/master/projects/covid/sources/Gemfile
-$ chmod 755 flu-stats
-$ sudo gem install bundle
-$ bundle install
-```
-
-This script requires Ruby 2.5.x to run. There are a couple of libraries
-needed to run as well hence the `bundle install` command.
-
-More will be done in the future to make this easier for people to play with.
-
-## How to run this yourself if you want...
-This script runs in Linux. It will likely work in Mac (terminal) without any
-tweaks. You must first obtain an API key and token which will require you to
-create a free account at the CDC. I'll get more instructions for folks on how to
-do that another time. If you're running Windows 10 then you can install Linux
-WSL. Instructions on how to do that is way outside the scope of this project.
-Just Google `Windows 10 WSL install`.
-
-To run the script, save your API token data in a file in `ini` format to a file
-called `soda.key` in whichever directory you desire (just make sure you remember
-where you put it):
-
-```
-[default]
-key_id = <key>
-key_secret = <secret token>
-```
-
-Run `chmod 600 /path/to/soda.key`
-
-Make sure `flu-data` is `chmod 755 /path/to/sources/bin/flu-stats` and then run
-the script:
-
-```
-/path/to/sources/bin/flu-stats -c /path/to/soda.key
-```
-
-## The numbers as of 2020-05-08
+### The numbers as of 2020-05-08
 Note the date time stamp in the output. That is a range date showing that the
 data retrieved from the API was data collected from February 1, 2020 to the date
 I ran this script which was May 5, 2020.
@@ -255,7 +160,7 @@ covid_deaths               => 176063
 influenza_deaths           => 23884
 ```
 
-## The numbers as of 2020-05-15
+### The numbers as of 2020-05-15
 
 Flu deaths from 2009 to 2019 by season
 ```
@@ -305,7 +210,6 @@ Provisional Covid Deaths source 3 from hc4f-j6nb
     }
 }
 ```
-
 
 
 Provisional COVID-19 Death Counts by Sex, Age, in the U.S. (source 4) from 9bhg-hcku
@@ -406,6 +310,110 @@ Unknown
 
 covid_deaths               => 219443
 influenza_deaths           => 24440
+```
+
+# My Personal Study
+
+## Purpose
+I wanted to scrutinize the numbers myself because something wasn't adding up
+with respect to the flu deaths in the 2019-2020 season compared to Covid deaths.
+
+I was able to obtain a CDC API key (links are in the `flu-status` script and in
+the references section at the end of this document.
+
+These are free, publically available APIs, which I assume are maintained
+by the CDC given the domain is owned by cdc.gov.
+
+Here's the code: https://github.com/notjames/jimconn-shell/blob/master/projects/covid/sources/bin/flu-stats
+
+## Inferences
+I haven't made any yet. I've been trying to simply grab the numbers and keep
+them as accurate as possible from the source. My initial thoughts are that I'm
+not convinced that the CDC is doing a good job of keeping the numbers consistent
+between the different endpoints. I am open to a couple of possibilities here.
+
+  1. The publically available APIs are not the same as the ones used internally
+  at the CDC
+  1. The APIs are the same and there are multiple people maintaining different
+  projects
+  1. I don't understand the difference between the like-named endpoints and thus
+  my understanding of what the mis-matched numbers represent is simply unknown
+  1. something else I just haven't thought of yet
+
+These kinds of inconsistencies make it super easy to believe we Americans are
+being lied to. I'm going to keep an objective perspective on this project until
+I can get more obvious and truthful details. This project is in its infantile
+status and so I can't make any reliable assumptions yet.
+
+## Obvious conclusions
+The only conclusion I can make so far is that the numbers between the sources
+don't add up...at all. By "add up," I don't mean mathematically. I mean
+logically. **The numbers between the API sources don't seem to match up**. These
+numbers don't match up to what we're told by the media. Things just aren't adding
+up. So, I need to research that more.
+
+These mismatches cause me to be very leary.
+
+### Notes
+  * These numbers represent the United States only!
+  * A Flu season is considered to run from about November to between April and
+    June depending on the numbers of people sick I believe.
+
+## Author
+Jim Conner
+
+## Bugs
+Likely. This project is still in heavy development when I have time to work on
+it.
+
+## About the project
+I am not a statistician. I am a software developer. One of the reasons I want
+this to be publically available is so that my work is reviewed and approved. If
+there are mistakes, please let me know so I can fix them. I'm seeking review for
+code and method.
+
+## Getting this script
+The fastest way to get this script is to install and use `wget` and then run:
+
+```
+$ cd $HOME/Downloads
+$ wget https://github.com/notjames/jimconn-shell/blob/master/projects/covid/sources/bin/flu-stats
+$ wget https://github.com/notjames/jimconn-shell/blob/master/projects/covid/sources/Gemfile
+$ chmod 755 flu-stats
+$ sudo gem install bundle
+$ bundle install
+```
+
+This script requires Ruby 2.5.x to run. There are a couple of libraries
+needed to run as well hence the `bundle install` command.
+
+More will be done in the future to make this easier for people to play with.
+
+## How to run this yourself if you want...
+This script runs in Linux. It will likely work in Mac (terminal) without any
+tweaks. You must first obtain an API key and token which will require you to
+create a free account at the CDC. I'll get more instructions for folks on how to
+do that another time. If you're running Windows 10 then you can install Linux
+WSL. Instructions on how to do that is way outside the scope of this project.
+Just Google `Windows 10 WSL install`.
+
+To run the script, save your API token data in a file in `ini` format to a file
+called `soda.key` in whichever directory you desire (just make sure you remember
+where you put it):
+
+```
+[default]
+key_id = <key>
+key_secret = <secret token>
+```
+
+Run `chmod 600 /path/to/soda.key`
+
+Make sure `flu-data` is `chmod 755 /path/to/sources/bin/flu-stats` and then run
+the script:
+
+```
+/path/to/sources/bin/flu-stats -c /path/to/soda.key
 ```
 
 
