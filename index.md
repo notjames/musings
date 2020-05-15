@@ -1,4 +1,5 @@
 # Covid-19: Personal Observations
+By Jim Conner 05/2020
 
 ## Purpose
 I wanted to scrutinize the numbers myself because something wasn't adding up
