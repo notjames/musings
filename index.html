@@ -160,95 +160,95 @@ Provisional COVID-19 Death Counts by Sex, Age, in the U.S. (source 4) from 9bhg-
 Statistics for death type: influenza
 ```
 All Sexes
-	Under 1 year                   => 11
-	1-4 years                      => 33
-	5-14 years                     => 41
-	15-24 years                    => 41
-	25-34 years                    => 133
-	35-44 years                    => 210
-	45-54 years                    => 522
-	55-64 years                    => 1108
-	65-74 years                    => 1305
-	75-84 years                    => 1328
-	85 years and over              => 1239
+ Under 1 year                   => 11
+ 1-4 years                      => 33
+ 5-14 years                     => 41
+ 15-24 years                    => 41
+ 25-34 years                    => 133
+ 35-44 years                    => 210
+ 45-54 years                    => 522
+ 55-64 years                    => 1108
+ 65-74 years                    => 1305
+ 75-84 years                    => 1328
+ 85 years and over              => 1239
 All Sexes Total
-	All Ages                       => 5971
+ All Ages                       => 5971
 Male
-	Under 1 year                   => 5
-	1-4 years                      => 19
-	5-14 years                     => 17
-	15-24 years                    => 22
-	25-34 years                    => 69
-	35-44 years                    => 112
-	45-54 years                    => 310
-	55-64 years                    => 633
-	65-74 years                    => 719
-	75-84 years                    => 657
-	85 years and over              => 503
+ Under 1 year                   => 5
+ 1-4 years                      => 19
+ 5-14 years                     => 17
+ 15-24 years                    => 22
+ 25-34 years                    => 69
+ 35-44 years                    => 112
+ 45-54 years                    => 310
+ 55-64 years                    => 633
+ 65-74 years                    => 719
+ 75-84 years                    => 657
+ 85 years and over              => 503
 Male Total
-	Male, all ages                 => 3066
+ Male, all ages                 => 3066
 Female
-	Under 1 year                   => 6
-	1-4 years                      => 14
-	5-14 years                     => 24
-	15-24 years                    => 19
-	25-34 years                    => 64
-	35-44 years                    => 98
-	45-54 years                    => 212
-	55-64 years                    => 475
-	65-74 years                    => 586
-	75-84 years                    => 671
-	85 years and over              => 736
+ Under 1 year                   => 6
+ 1-4 years                      => 14
+ 5-14 years                     => 24
+ 15-24 years                    => 19
+ 25-34 years                    => 64
+ 35-44 years                    => 98
+ 45-54 years                    => 212
+ 55-64 years                    => 475
+ 65-74 years                    => 586
+ 75-84 years                    => 671
+ 85 years and over              => 736
 Female Total
-	Female, all ages               => 2905
+ Female, all ages               => 2905
 Unknown
-	All ages                       => 0
+ All ages                       => 0
 
 Statistics for death type: covid19
 All Sexes
-	Under 1 year                   => 4
-	1-4 years                      => 2
-	5-14 years                     => 4
-	15-24 years                    => 48
-	25-34 years                    => 317
-	35-44 years                    => 796
-	45-54 years                    => 2262
-	55-64 years                    => 5422
-	65-74 years                    => 9359
-	75-84 years                    => 12026
-	85 years and over              => 13776
+ Under 1 year                   => 4
+ 1-4 years                      => 2
+ 5-14 years                     => 4
+ 15-24 years                    => 48
+ 25-34 years                    => 317
+ 35-44 years                    => 796
+ 45-54 years                    => 2262
+ 55-64 years                    => 5422
+ 65-74 years                    => 9359
+ 75-84 years                    => 12026
+ 85 years and over              => 13776
 All Sexes Total
-	All Ages                       => 44016
+ All Ages                       => 44016
 Male
-	Under 1 year                   => 2
-	1-4 years                      => 1
-	5-14 years                     => 3
-	15-24 years                    => 32
-	25-34 years                    => 222
-	35-44 years                    => 577
-	45-54 years                    => 1612
-	55-64 years                    => 3621
-	65-74 years                    => 5918
-	75-84 years                    => 6801
-	85 years and over              => 5848
+ Under 1 year                   => 2
+ 1-4 years                      => 1
+ 5-14 years                     => 3
+ 15-24 years                    => 32
+ 25-34 years                    => 222
+ 35-44 years                    => 577
+ 45-54 years                    => 1612
+ 55-64 years                    => 3621
+ 65-74 years                    => 5918
+ 75-84 years                    => 6801
+ 85 years and over              => 5848
 Male Total
-	Male, all ages                 => 24637
+ Male, all ages                 => 24637
 Female
-	Under 1 year                   => 2
-	1-4 years                      => 1
-	5-14 years                     => 1
-	15-24 years                    => 16
-	25-34 years                    => 95
-	35-44 years                    => 219
-	45-54 years                    => 650
-	55-64 years                    => 1801
-	65-74 years                    => 3441
-	75-84 years                    => 5225
-	85 years and over              => 7927
+ Under 1 year                   => 2
+ 1-4 years                      => 1
+ 5-14 years                     => 1
+ 15-24 years                    => 16
+ 25-34 years                    => 95
+ 35-44 years                    => 219
+ 45-54 years                    => 650
+ 55-64 years                    => 1801
+ 65-74 years                    => 3441
+ 75-84 years                    => 5225
+ 85 years and over              => 7927
 Female Total
-	Female, all ages               => 19378
+ Female, all ages               => 19378
 Unknown
-	All ages                       => 1
+ All ages                       => 1
 
 
 covid_deaths               => 176063
@@ -313,95 +313,95 @@ Statistics for death type: influenza
 
 ```
 All Sexes
-	Under 1 year                   => 11
-	1-4 years                      => 35
-	5-14 years                     => 43
-	15-24 years                    => 42
-	25-34 years                    => 135
-	35-44 years                    => 214
-	45-54 years                    => 529
-	55-64 years                    => 1136
-	65-74 years                    => 1334
-	75-84 years                    => 1357
-	85 years and over              => 1274
+ Under 1 year                   => 11
+ 1-4 years                      => 35
+ 5-14 years                     => 43
+ 15-24 years                    => 42
+ 25-34 years                    => 135
+ 35-44 years                    => 214
+ 45-54 years                    => 529
+ 55-64 years                    => 1136
+ 65-74 years                    => 1334
+ 75-84 years                    => 1357
+ 85 years and over              => 1274
 All Sexes Total
-	All Ages                       => 6110
+ All Ages                       => 6110
 Male
-	Under 1 year                   => 5
-	1-4 years                      => 20
-	5-14 years                     => 18
-	15-24 years                    => 22
-	25-34 years                    => 70
-	35-44 years                    => 115
-	45-54 years                    => 313
-	55-64 years                    => 648
-	65-74 years                    => 737
-	75-84 years                    => 669
-	85 years and over              => 518
+ Under 1 year                   => 5
+ 1-4 years                      => 20
+ 5-14 years                     => 18
+ 15-24 years                    => 22
+ 25-34 years                    => 70
+ 35-44 years                    => 115
+ 45-54 years                    => 313
+ 55-64 years                    => 648
+ 65-74 years                    => 737
+ 75-84 years                    => 669
+ 85 years and over              => 518
 Male Total
-	Male, all ages                 => 3135
+ Male, all ages                 => 3135
 Female
-	Under 1 year                   => 6
-	1-4 years                      => 15
-	5-14 years                     => 25
-	15-24 years                    => 20
-	25-34 years                    => 65
-	35-44 years                    => 99
-	45-54 years                    => 216
-	55-64 years                    => 488
-	65-74 years                    => 597
-	75-84 years                    => 688
-	85 years and over              => 756
+ Under 1 year                   => 6
+ 1-4 years                      => 15
+ 5-14 years                     => 25
+ 15-24 years                    => 20
+ 25-34 years                    => 65
+ 35-44 years                    => 99
+ 45-54 years                    => 216
+ 55-64 years                    => 488
+ 65-74 years                    => 597
+ 75-84 years                    => 688
+ 85 years and over              => 756
 Female Total
-	Female, all ages               => 2975
+ Female, all ages               => 2975
 Unknown
-	All ages                       => 0
+ All ages                       => 0
 
 Statistics for death type: covid19
 All Sexes
-	Under 1 year                   => 4
-	1-4 years                      => 2
-	5-14 years                     => 6
-	15-24 years                    => 59
-	25-34 years                    => 388
-	35-44 years                    => 973
-	45-54 years                    => 2772
-	55-64 years                    => 6725
-	65-74 years                    => 11524
-	75-84 years                    => 14930
-	85 years and over              => 17478
+ Under 1 year                   => 4
+ 1-4 years                      => 2
+ 5-14 years                     => 6
+ 15-24 years                    => 59
+ 25-34 years                    => 388
+ 35-44 years                    => 973
+ 45-54 years                    => 2772
+ 55-64 years                    => 6725
+ 65-74 years                    => 11524
+ 75-84 years                    => 14930
+ 85 years and over              => 17478
 All Sexes Total
-	All Ages                       => 54861
+ All Ages                       => 54861
 Male
-	Under 1 year                   => 2
-	1-4 years                      => 1
-	5-14 years                     => 4
-	15-24 years                    => 39
-	25-34 years                    => 270
-	35-44 years                    => 710
-	45-54 years                    => 1970
-	55-64 years                    => 4490
-	65-74 years                    => 7259
-	75-84 years                    => 8369
-	85 years and over              => 7273
+ Under 1 year                   => 2
+ 1-4 years                      => 1
+ 5-14 years                     => 4
+ 15-24 years                    => 39
+ 25-34 years                    => 270
+ 35-44 years                    => 710
+ 45-54 years                    => 1970
+ 55-64 years                    => 4490
+ 65-74 years                    => 7259
+ 75-84 years                    => 8369
+ 85 years and over              => 7273
 Male Total
-	Male, all ages                 => 30387
+ Male, all ages                 => 30387
 Female
-	Under 1 year                   => 2
-	1-4 years                      => 1
-	5-14 years                     => 2
-	15-24 years                    => 20
-	25-34 years                    => 118
-	35-44 years                    => 263
-	45-54 years                    => 802
-	55-64 years                    => 2235
-	65-74 years                    => 4265
-	75-84 years                    => 6561
-	85 years and over              => 10204
+ Under 1 year                   => 2
+ 1-4 years                      => 1
+ 5-14 years                     => 2
+ 15-24 years                    => 20
+ 25-34 years                    => 118
+ 35-44 years                    => 263
+ 45-54 years                    => 802
+ 55-64 years                    => 2235
+ 65-74 years                    => 4265
+ 75-84 years                    => 6561
+ 85 years and over              => 10204
 Female Total
-	Female, all ages               => 24473
+ Female, all ages               => 24473
 Unknown
-	All ages                       => 1
+ All ages                       => 1
 
 
 covid_deaths               => 219443
