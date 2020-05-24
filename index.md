@@ -8,6 +8,8 @@ investigation into the numbers between Covid deaths and Influenza deaths. These
 numbers, in my estimation, are really important! I explain below. But for now if
 you're just interested in seeing the numbers:
 
+## Two full sets of sample data:
+
 ### The numbers as of 2020-05-08
 Note the date time stamp in the output. That is a range date showing that the
 data retrieved from the API was data collected from February 1, 2020 to the date
@@ -326,11 +328,43 @@ by the CDC given the domain is owned by cdc.gov.
 
 Here's the code: https://github.com/notjames/jimconn-shell/blob/master/projects/covid/sources/bin/flu-stats
 
-## Inferences
-I haven't made any yet. I've been trying to simply grab the numbers and keep
-them as accurate as possible from the source. My initial thoughts are that I'm
-not convinced that the CDC is doing a good job of keeping the numbers consistent
-between the different endpoints. I am open to a couple of possibilities here.
+## About the numbers
+To date, I've taken two samples of the numbers from the CDC. The Flu deaths
+seasonal numbers are, from what I understand from the CDC source, seasonal
+numbers.
+
+### Flu Numbers
+One thing I take away from the flu numbers is that they are generally the same
+year to year since 2009 until the 2018-2019 season where they drop off
+significantly, which I find confusing. The drop off simply does not make sense.
+To the best of my knowledge, nothing changed with vaccination numbers or
+potency. I could pull the vaccination numbers, which maybe I will. Currently,
+I have the numbers showing an approximate average of 200k deaths per season in
+the United States since 2009.
+
+### Covid numbers
+I still really don't know what to make about the covid numbers. Here's a brief
+explanation. I was able to find four sources in the CDC API-fronted database
+that show Covid deaths for the United States nation wide. One of them provided
+a breakdown of the affected demographics by age by gender.
+
+None of the numbers between the four data match up. All of the flu deaths shown
+by the three sources are wildly lower than the last ten seasons shown above.
+Source 3 and source 4 show wildly high covid deaths compared to any information
+open to the public besides these.
+
+### Personal Take Aways
+The covid data just can't be believed.
+
+  1. The numbers don't match between each source.
+  1. The numbers seem wildly inconceivable.
+
+## Official Inferences
+I haven't made any official inferences yet. I've been trying to simply grab the
+numbers and keep them as accurate as possible from the source. My initial thoughts
+are that I'm not convinced that the CDC is doing a good job of keeping the numbers
+consistent between the different endpoints. I am open to a couple of possibilities
+here.
 
   1. The publically available APIs are not the same as the ones used internally
   at the CDC
@@ -345,7 +379,7 @@ being lied to. I'm going to keep an objective perspective on this project until
 I can get more obvious and truthful details. This project is in its infantile
 status and so I can't make any reliable assumptions yet.
 
-## Obvious conclusions
+## Obvious Conclusions
 The only conclusion I can make so far is that the numbers between the sources
 don't add up...at all. By "add up," I don't mean mathematically. I mean
 logically. **The numbers between the API sources don't seem to match up**. These
@@ -353,6 +387,27 @@ numbers don't match up to what we're told by the media. Things just aren't addin
 up. So, I need to research that more.
 
 These mismatches cause me to be very leary.
+
+## Personally Held Beliefs
+Given the fact that:
+
+  1. the source of truth doesn't even provide reliable impirical data
+  1. there's enough information which I find to be reasonable enough to
+     determine factual indicates that we are being lied to by mainstream media
+     and local governments and
+  1. the fact that the logic comparing covid-affected deaths to that of
+     flu-affected deaths would indicate that flu is by far a greater killer of
+     people just by the mere fact that flu generally kills people from all ages
+     vs covid killing mostly unhealthy or geriatric patients
+
+I personally believe that we're being lied to by media and local governments.
+I'm not sure why. However, it seems to me that the fear of covid has been used
+against Americans and people like Jay Inslee are using it as an excuse to
+violate Washingtonian's Constitutional Rights.
+
+Now I can't prove any of my beliefs as I don't have a way of gathering official
+proof. However, circumstantially, it sure seems like my beliefs could be
+substantiated.
 
 ### Notes
   * These numbers represent the United States only!
