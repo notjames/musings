@@ -8,7 +8,152 @@ investigation into the numbers between Covid deaths and Influenza deaths. These
 numbers, in my estimation, are really important! I explain below. But for now if
 you're just interested in seeing the numbers:
 
-## Two full sets of sample data:
+## Three full sets of sample data:
+
+### The numbers as of 2020-07-28
+Note that a rather ugly bug was fixed tonight which inadvertently misrepresented
+the death toll numbers for both covid and flu sourced from the 4th CDC source
+endpoint. That bug is now fixed and this data set represents the correct values.
+Moreover, I've added an addendum entry to the first two data sets' source
+4 death values but I left the incorrect values in place for the record.
+
+```
+{
+    "2009-10" => 192152,
+    "2010-11" => 198253,
+    "2011-12" => 182065,
+    "2012-13" => 200208,
+    "2013-14" => 187417,
+    "2014-15" => 201857,
+    "2015-16" => 181825,
+    "2016-17" => 186575,
+    "2017-18" => 195386,
+    "2018-19" => 87074
+}
+```
+
+Provisional Covid Deaths source 1 from r8kw-7aab
+```
+{
+    "2020-02-01T00:00:00.000-2020-07-28T00:00:00.000" => {
+            :covid_deaths => 134710,
+        :influenza_deaths => 6570
+    }
+}
+```
+
+Provisional Covid Deaths source 2 from uggs-hy5q
+```
+{
+    "2020-02-01T00:00:00.000-2020-07-28T00:00:00.000" => {
+            :covid_deaths => 130250,
+        :influenza_deaths => 6553
+    }
+}
+```
+
+Provisional Covid Deaths source 3 from hc4f-j6nb
+```
+{
+    "2020-02-01T00:00:00.000-2020-07-28T00:00:00.000" => {
+            :covid_deaths => 310690,
+        :influenza_deaths => 52389
+    }
+}
+```
+
+Provisional COVID-19 Death Counts by Sex, Age, in the U.S. (source 4) from 9bhg-hcku
+Statistics for death type: influenza
+```
+All
+        Under 1 year                   => 14
+        1-4 years                      => 41
+        5-14 years                     => 49
+        15-24 years                    => 51
+        25-34 years                    => 149
+        35-44 years                    => 242
+        45-54 years                    => 571
+        55-64 years                    => 1214
+        65-74 years                    => 1421
+        75-84 years                    => 1446
+        85 years and over              => 1355
+        All Ages                       => 6553
+Male
+        Under 1 year                   => 8
+        1-4 years                      => 25
+        5-14 years                     => 21
+        15-24 years                    => 27
+        25-34 years                    => 76
+        35-44 years                    => 129
+        45-54 years                    => 338
+        55-64 years                    => 690
+        65-74 years                    => 789
+        75-84 years                    => 719
+        85 years and over              => 552
+        All ages                       => 3374
+Female
+        Under 1 year                   => 6
+        1-4 years                      => 16
+        5-14 years                     => 28
+        15-24 years                    => 24
+        25-34 years                    => 73
+        35-44 years                    => 113
+        45-54 years                    => 233
+        55-64 years                    => 523
+        65-74 years                    => 632
+        75-84 years                    => 727
+        85 years and over              => 803
+        All ages                       => 3178
+Unknown
+        All ages                       => 1
+
+Statistics for death type: covid19
+All
+        Under 1 year                   => 11
+        1-4 years                      => 9
+        5-14 years                     => 16
+        15-24 years                    => 190
+        25-34 years                    => 935
+        35-44 years                    => 2411
+        45-54 years                    => 6566
+        55-64 years                    => 15880
+        65-74 years                    => 27167
+        75-84 years                    => 34399
+        85 years and over              => 42666
+        All Ages                       => 130250
+Male
+        Under 1 year                   => 6
+        1-4 years                      => 4
+        5-14 years                     => 13
+        15-24 years                    => 122
+        25-34 years                    => 640
+        35-44 years                    => 1692
+        45-54 years                    => 4570
+        55-64 years                    => 10455
+        65-74 years                    => 16858
+        75-84 years                    => 18734
+        85 years and over              => 16581
+        All ages                       => 69675
+Female
+        Under 1 year                   => 5
+        1-4 years                      => 5
+        5-14 years                     => 3
+        15-24 years                    => 68
+        25-34 years                    => 295
+        35-44 years                    => 719
+        45-54 years                    => 1996
+        55-64 years                    => 5425
+        65-74 years                    => 10308
+        75-84 years                    => 15664
+        85 years and over              => 26082
+        All ages                       => 60570
+Unknown
+        All ages                       => 5
+
+
+covid_deaths               => 130250
+influenza_deaths           => 6553
+```
 
 ### The numbers as of 2020-05-08
 Note the date time stamp in the output. That is a range date showing that the
@@ -158,8 +303,8 @@ Unknown
  All ages                       => 1
 
 
-covid_deaths               => 176063
-influenza_deaths           => 23884
+covid_deaths               => 176063 (Should have read: 44016)
+influenza_deaths           => 23884 (Should have read: 5971)
 ```
 
 ### The numbers as of 2020-05-15
@@ -310,8 +455,8 @@ Unknown
  All ages                       => 1
 
 
-covid_deaths               => 219443
-influenza_deaths           => 24440
+covid_deaths               => 219443 (should have read: 54861)
+influenza_deaths           => 24440 (should have read: 6110)
 ```
 
 # My Personal Study
